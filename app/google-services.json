@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "683678812667",
+    "project_id": "bull-inventory-by-scanner",
+    "storage_bucket": "bull-inventory-by-scanner.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:683678812667:android:4991d7d0a9640db349635e",
+        "android_client_info": {
+          "package_name": "ussrfantom.com.example.bullinventorybyscanner"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "683678812667-pobahoms9q59fot5a6bl545852iit43e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyArRinaSzqPW1_axcN822s0ihDxRFKJu-0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "683678812667-pobahoms9q59fot5a6bl545852iit43e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
