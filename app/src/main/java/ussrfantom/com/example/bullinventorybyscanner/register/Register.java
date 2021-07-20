@@ -3,6 +3,7 @@ package ussrfantom.com.example.bullinventorybyscanner.register;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -46,9 +47,12 @@ public class Register extends AppCompatActivity {
                                 @Override
                                 public void onComplete(@NonNull Task<AuthResult> task) {
                                     if (task.isSuccessful()){
-                                        Toast.makeText(Register.this, "Успешно, перенаправляем", Toast.LENGTH_SHORT).show();
+                                        Toast.makeText(Register.this, "Успешно, перенаправляем в меню авторизации", Toast.LENGTH_SHORT).show();
+                                        Intent intent = new Intent(Register.this, Authorization.class);
+                                        startActivity(intent);
+                                        finish();
                                     }else{
-                                        Toast.makeText(Register.this, "Ошибка входа", Toast.LENGTH_SHORT).show();
+                                        Toast.makeText(Register.this, "Ошибка, логин или пароль введены не правильно", Toast.LENGTH_SHORT).show();
                                     }
                                 }
                             });

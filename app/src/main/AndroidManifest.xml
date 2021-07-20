@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.BullInventoryByScanner">
-        <activity android:name=".register.Register"></activity>
+        <activity android:name=".selectionmenu.SelectionMenu"></activity>
+        <activity android:name=".register.Register" />
         <activity android:name=".authorization.Authorization" />
         <activity android:name=".splashscreen.SplashScreen">
             <intent-filter>

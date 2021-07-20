@@ -17,6 +17,7 @@ import com.google.firebase.auth.FirebaseAuth;
 
 import ussrfantom.com.example.bullinventorybyscanner.R;
 import ussrfantom.com.example.bullinventorybyscanner.register.Register;
+import ussrfantom.com.example.bullinventorybyscanner.selectionmenu.SelectionMenu;
 
 public class Authorization extends AppCompatActivity {
     private EditText editTextLogin;
@@ -58,7 +59,10 @@ public class Authorization extends AppCompatActivity {
                         @Override
                         public void onComplete(@NonNull Task<AuthResult> task) {
                             if (task.isSuccessful()){
-                                Toast.makeText(Authorization.this, "Успешно, перенаправляем", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(Authorization.this, "Успешно, перенаправляем в главное меню", Toast.LENGTH_SHORT).show();
+                                Intent intent = new Intent(Authorization.this, SelectionMenu.class);
+                                startActivity(intent);
+                                finish();
                             }else{
                                 Toast.makeText(Authorization.this, "Ошибка входа", Toast.LENGTH_SHORT).show();
                             }
