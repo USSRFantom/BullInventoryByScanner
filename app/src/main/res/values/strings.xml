@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Bull Inventory By Scanner</string>
+    <string name="img_background">Img_background</string>
+    <string name="Search">Поиск</string>
+    <array name="shops">
+        <item>"Выберите магазин"</item>
+        <item>"Барракуда"</item>
+        <item>"Борный"</item>
+    </array>
 </resources>
