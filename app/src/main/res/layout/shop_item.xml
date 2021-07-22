@@ -17,6 +17,7 @@
             android:layout_marginTop="2dp"
             android:layout_marginEnd="5dp"
             android:text="TextView"
+            android:textColor="@color/gold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView_tsd2_pcd_ke" />
 
@@ -27,6 +28,7 @@
             android:layout_marginTop="2dp"
             android:layout_marginEnd="5dp"
             android:text="TextView"
+            android:textColor="@color/white"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView_tsd1_serial_number" />
 
@@ -37,6 +39,7 @@
             android:layout_marginTop="2dp"
             android:layout_marginEnd="5dp"
             android:text="TextView"
+            android:textColor="@color/gold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView_print_pcd_ke" />
 
@@ -47,6 +50,7 @@
             android:layout_marginTop="2dp"
             android:layout_marginEnd="5dp"
             android:text="TextView"
+            android:textColor="@color/gold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView_monitor_pcd_ke" />
 
@@ -57,6 +61,7 @@
             android:layout_marginTop="2dp"
             android:layout_marginEnd="5dp"
             android:text="TextView"
+            android:textColor="@color/white"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView_monitor_pcd_serial_number" />
 
@@ -67,6 +72,7 @@
             android:layout_marginTop="2dp"
             android:layout_marginEnd="5dp"
             android:text="TextView"
+            android:textColor="@color/white"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView_ups_server" />
 
@@ -77,6 +83,7 @@
             android:layout_marginTop="2dp"
             android:layout_marginEnd="5dp"
             android:text="TextView"
+            android:textColor="@color/gold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView_router_reserve_ke" />
 
@@ -87,6 +94,7 @@
             android:layout_marginTop="2dp"
             android:layout_marginEnd="5dp"
             android:text="TextView"
+            android:textColor="@color/gold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView_pcd_ke" />
 
@@ -472,6 +480,7 @@
             android:layout_marginTop="2dp"
             android:layout_marginEnd="5dp"
             android:text="TextView"
+            android:textColor="@color/gold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView_name" />
 
@@ -482,6 +491,7 @@
             android:layout_marginTop="2dp"
             android:layout_marginEnd="5dp"
             android:text="TextView"
+            android:textColor="@color/white"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textViewName_pcd" />
 
@@ -492,6 +502,7 @@
             android:layout_marginTop="2dp"
             android:layout_marginEnd="5dp"
             android:text="TextView"
+            android:textColor="@color/white"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView_pcd_serial_number" />
 
@@ -502,6 +513,7 @@
             android:layout_marginTop="2dp"
             android:layout_marginEnd="5dp"
             android:text="TextView"
+            android:textColor="@color/white"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView_name_server" />
 
@@ -512,6 +524,7 @@
             android:layout_marginTop="2dp"
             android:layout_marginEnd="5dp"
             android:text="TextView"
+            android:textColor="@color/white"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView_server_serial_number" />
 
@@ -522,6 +535,7 @@
             android:layout_marginTop="2dp"
             android:layout_marginEnd="5dp"
             android:text="TextView"
+            android:textColor="@color/gold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView_server_ke" />
 
@@ -532,6 +546,7 @@
             android:layout_marginTop="2dp"
             android:layout_marginEnd="5dp"
             android:text="TextView"
+            android:textColor="@color/white"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView_router_master" />
 
@@ -542,6 +557,7 @@
             android:layout_marginTop="2dp"
             android:layout_marginEnd="5dp"
             android:text="TextView"
+            android:textColor="@color/white"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView_router_master_serial_number" />
 
@@ -552,6 +568,7 @@
             android:layout_marginTop="2dp"
             android:layout_marginEnd="5dp"
             android:text="TextView"
+            android:textColor="@color/gold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView_router_master_ke" />
 
@@ -562,6 +579,7 @@
             android:layout_marginTop="2dp"
             android:layout_marginEnd="5dp"
             android:text="TextView"
+            android:textColor="@color/white"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView_router_reserve" />
 
@@ -572,6 +590,7 @@
             android:layout_marginTop="2dp"
             android:layout_marginEnd="5dp"
             android:text="TextView"
+            android:textColor="@color/white"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView_router_reserve_serial_number" />
 
@@ -582,6 +601,7 @@
             android:layout_marginTop="2dp"
             android:layout_marginEnd="5dp"
             android:text="TextView"
+            android:textColor="@color/white"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView_ups_pcd" />
 
@@ -592,6 +612,7 @@
             android:layout_marginTop="2dp"
             android:layout_marginEnd="5dp"
             android:text="TextView"
+            android:textColor="@color/white"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView_ups_pcd_serial_number" />
 
@@ -602,6 +623,7 @@
             android:layout_marginTop="2dp"
             android:layout_marginEnd="5dp"
             android:text="TextView"
+            android:textColor="@color/gold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView_ups_server_ke" />
 
@@ -612,6 +634,7 @@
             android:layout_marginTop="2dp"
             android:layout_marginEnd="5dp"
             android:text="TextView"
+            android:textColor="@color/white"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView_ups_server_serial_number" />
 
@@ -622,6 +645,7 @@
             android:layout_marginTop="2dp"
             android:layout_marginEnd="5dp"
             android:text="TextView"
+            android:textColor="@color/gold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView_ups_pcd_ke" />
 
@@ -632,6 +656,7 @@
             android:layout_marginTop="2dp"
             android:layout_marginEnd="5dp"
             android:text="TextView"
+            android:textColor="@color/white"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView_monitor_pcd" />
 
@@ -642,6 +667,7 @@
             android:layout_marginTop="2dp"
             android:layout_marginEnd="5dp"
             android:text="TextView"
+            android:textColor="@color/white"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView_print_pcd" />
 
@@ -652,6 +678,7 @@
             android:layout_marginTop="2dp"
             android:layout_marginEnd="5dp"
             android:text="TextView"
+            android:textColor="@color/white"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView_print_pcd_serial_number" />
 
@@ -662,6 +689,7 @@
             android:layout_marginTop="2dp"
             android:layout_marginEnd="5dp"
             android:text="TextView"
+            android:textColor="@color/white"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView_tsd1" />
 
@@ -672,6 +700,7 @@
             android:layout_marginTop="2dp"
             android:layout_marginEnd="5dp"
             android:text="TextView"
+            android:textColor="@color/gold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView_tsd1_pcd_ke" />
 
@@ -682,6 +711,7 @@
             android:layout_marginTop="2dp"
             android:layout_marginEnd="5dp"
             android:text="TextView"
+            android:textColor="@color/white"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView_tsd2" />
 
@@ -692,6 +722,7 @@
             android:layout_marginTop="2dp"
             android:layout_marginEnd="5dp"
             android:text="TextView"
+            android:textColor="@color/white"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView_tsd2_serial_number" />
 
@@ -702,6 +733,7 @@
             android:layout_marginTop="2dp"
             android:layout_marginEnd="5dp"
             android:text="TextView"
+            android:textColor="@color/white"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView_tsd3" />
 
@@ -712,6 +744,7 @@
             android:layout_marginTop="2dp"
             android:layout_marginEnd="5dp"
             android:text="TextView"
+            android:textColor="@color/white"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView_tsd3_serial_number" />
     </androidx.constraintlayout.widget.ConstraintLayout>
