@@ -15,15 +15,24 @@ import ussrfantom.com.example.bullinventorybyscanner.pojo.Shop;
 
 public class EmployeeAdapter extends RecyclerView.Adapter<EmployeeAdapter.EmployeeViewHolder> {
 
+    private OnShopClickListener onShopClickListener;
 
-    private List<Shop> shops;  //!!!!!!!!!!!
+    public interface OnShopClickListener{
+        void onShopClick(int position);
+        void onLogClick(int position);
+    }
 
+    public void setOnShopClickListener(OnShopClickListener onShopClickListener) {
+        this.onShopClickListener = onShopClickListener;
+    }
 
-    public List<Shop> getShops() {   //!!!!!!!!!!
+    private List<Shop> shops;
+
+    public List<Shop> getShops() {
         return shops;
     }
 
-    public void setShops(List<Shop> shops) { //!!!!!!!!!!
+    public void setShops(List<Shop> shops) {
         this.shops = shops;
         notifyDataSetChanged();
     }
@@ -154,6 +163,23 @@ public class EmployeeAdapter extends RecyclerView.Adapter<EmployeeAdapter.Employ
             textView_tsd3_serial_number = itemView.findViewById(R.id.textView_tsd3_serial_number);
             textView_tsd3_pcd_ke = itemView.findViewById(R.id.textView_tsd3_pcd_ke);
 
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    if (onShopClickListener != null){
+                        onShopClickListener.onShopClick(getAdapterPosition());
+                    }
+                }
+            });
+                itemView.setOnLongClickListener(new View.OnLongClickListener() {
+                    @Override
+                    public boolean onLongClick(View view) {
+                        if (onShopClickListener != null){
+                            onShopClickListener.onLogClick(getAdapterPosition());
+                        }
+                        return true;
+                    }
+                });
         }
     }
 }

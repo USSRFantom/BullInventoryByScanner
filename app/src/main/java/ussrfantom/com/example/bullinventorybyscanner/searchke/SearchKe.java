@@ -1,13 +1,14 @@
 package ussrfantom.com.example.bullinventorybyscanner.searchke;
 
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.ItemTouchHelper;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -62,38 +63,63 @@ public class SearchKe extends AppCompatActivity {
                         public void accept(EmployeeShop employeeShop) throws Exception {
                             arrayListShop = new ArrayList<>();
                             arrayListShops = (ArrayList<Shop>) employeeShop.getShop();
-                            //adapter.setShops(employeeShop.getShop());
                         }
                     }, new Consumer<Throwable>() {
                         @Override
                         public void accept(Throwable throwable) throws Exception {
-                            Log.i("Ошбика", "<------------------");
                             Toast.makeText(SearchKe.this, "Ошибка получения данных", Toast.LENGTH_SHORT).show();
                         }
                     });
         compositeDisposable.add(disposable);
 
 
-
-
-
-
         //получаем магазин при нажатии кнопки начало
         buttonSearch.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                int position = spinnerSearch.getSelectedItemPosition();
-                arrayListShop.add(arrayListShops.get(position));
-                Log.i("Зашли", "<------------------");
-                adapter.setShops(arrayListShop);
+                int position = spinnerSearch.getSelectedItemPosition(); // получаем позицию элемента
+                arrayListShop.add(arrayListShops.get(position)); //добавляем 1 обьект в массив List
+                adapter.setShops(arrayListShop); // устанавливаем адаптеру наш обьект
             }
         });
         //получаем магазин при нажатии кнопки конец
 
 
+        //Слушатель на нажатие на магазин и удалени его начало
+        adapter.setOnShopClickListener(new EmployeeAdapter.OnShopClickListener() {
+            @Override
+            public void onShopClick(int position) {
+                Toast.makeText(SearchKe.this, "Удерживайте палец 3 секунды, чтобы удалить элемент", Toast.LENGTH_SHORT).show();
+            }
 
+            @Override
+            public void onLogClick(int position) {
+                remove(position);
+            }
+        });
+        //Слушатель на нажатие на магазин и удалени его конец
+
+        //Удаление свайпом начало
+        ItemTouchHelper itemTouchHelper = new ItemTouchHelper(new ItemTouchHelper.SimpleCallback(0, ItemTouchHelper.LEFT | ItemTouchHelper.RIGHT) {
+            @Override
+            public boolean onMove(@NonNull RecyclerView recyclerView, @NonNull RecyclerView.ViewHolder viewHolder, @NonNull RecyclerView.ViewHolder target) {
+                return false;
+            }
+
+            @Override
+            public void onSwiped(@NonNull RecyclerView.ViewHolder viewHolder, int direction) {
+                remove(viewHolder.getAdapterPosition());
+            }
+        });
+        itemTouchHelper.attachToRecyclerView(recyclerViewShop);
+        //Удаление свайпом конец
     }
-
+    //удаление элемента из смписка начало
+    private void remove (int position){
+        arrayListShop.remove(position);
+        adapter.notifyDataSetChanged();
+    }
+    //удаление элемента из смписка конец
     @Override
     protected void onDestroy() {
         if (compositeDisposable !=  null){
