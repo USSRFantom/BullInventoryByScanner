@@ -18,6 +18,7 @@ public class EmployeeAdapter extends RecyclerView.Adapter<EmployeeAdapter.Employ
 
     private List<Shop> shops;  //!!!!!!!!!!!
 
+
     public List<Shop> getShops() {   //!!!!!!!!!!
         return shops;
     }
