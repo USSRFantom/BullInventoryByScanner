@@ -3,7 +3,7 @@
     <string name="img_background">Img_background</string>
     <string name="Search">Поиск</string>
     <array name="shops">
-        <item>"Выберите магазин"</item>
+        <item>"Веланский"</item>
         <item>"Барракуда"</item>
         <item>"Борный"</item>
     </array>

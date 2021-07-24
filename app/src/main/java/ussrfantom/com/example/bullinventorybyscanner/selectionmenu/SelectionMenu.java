@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.ImageView;
 
 import ussrfantom.com.example.bullinventorybyscanner.R;
-import ussrfantom.com.example.bullinventorybyscanner.searchke.SearchKe;
+import ussrfantom.com.example.bullinventorybyscanner.searchke.employess.SearchKe;
 
 public class SelectionMenu extends AppCompatActivity {
     private ImageView imageViewSearch;

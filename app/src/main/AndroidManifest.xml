@@ -10,7 +10,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.BullInventoryByScanner">
-        <activity android:name=".searchke.SearchKe"></activity>
+        <activity android:name=".searchke.employess.SearchKe"></activity>
         <activity android:name=".selectionmenu.SelectionMenu" />
         <activity android:name=".register.Register" />
         <activity android:name=".authorization.Authorization" />
