@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="ussrfantom.com.example.bullinventorybyscanner">
-    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -10,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.BullInventoryByScanner">
-        <activity android:name=".searchke.employess.SearchKe"></activity>
+        <activity android:name=".replacementke.ReplacementKe"></activity>
+        <activity android:name=".searchke.employess.SearchKe" />
         <activity android:name=".selectionmenu.SelectionMenu" />
         <activity android:name=".register.Register" />
         <activity android:name=".authorization.Authorization" />

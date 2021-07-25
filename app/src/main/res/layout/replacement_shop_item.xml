@@ -1,0 +1,1043 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/fon">
+    <TextView
+        android:id="@+id/textView_tsd31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:textSize="19sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/gold"
+        app:layout_constraintStart_toEndOf="@+id/textView371"
+        app:layout_constraintTop_toBottomOf="@+id/textView_tsd2_pcd_ke1" />
+
+    <TextView
+        android:id="@+id/textView_tsd1_pcd_ke1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:textSize="19sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/textView331"
+        app:layout_constraintTop_toBottomOf="@+id/textView_tsd1_serial_number1" />
+
+    <TextView
+        android:id="@+id/textView_tsd11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:textSize="19sp"
+        android:layout_marginTop="10dp"
+
+        android:textColor="@color/gold"
+        app:layout_constraintStart_toEndOf="@+id/textView311"
+        app:layout_constraintTop_toBottomOf="@+id/textView_print_pcd_ke1" />
+
+    <TextView
+        android:id="@+id/textView_print_pcd1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:textSize="19sp"
+        android:layout_marginTop="10dp"
+
+        android:textColor="@color/gold"
+        app:layout_constraintStart_toEndOf="@+id/textView281"
+        app:layout_constraintTop_toBottomOf="@+id/textView_monitor_pcd_ke1" />
+
+    <TextView
+        android:id="@+id/textView_monitor_pcd_ke1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:textSize="19sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/textView271"
+        app:layout_constraintTop_toBottomOf="@+id/textView_monitor_pcd_serial_number1" />
+
+    <TextView
+        android:id="@+id/textView_ups_server_serial_number1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:textSize="19sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/textView231"
+        app:layout_constraintTop_toBottomOf="@+id/textView_ups_server1" />
+
+    <TextView
+        android:id="@+id/textView_ups_pcd1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:textSize="19sp"
+        android:layout_marginTop="10dp"
+
+        android:textColor="@color/gold"
+        app:layout_constraintStart_toEndOf="@+id/textView191"
+        app:layout_constraintTop_toBottomOf="@+id/textView_router_reserve_ke1" />
+
+    <TextView
+        android:id="@+id/textView_name_server1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:textSize="19sp"
+        android:layout_marginTop="10dp"
+
+        android:textColor="@color/gold"
+        app:layout_constraintStart_toEndOf="@+id/textView101"
+        app:layout_constraintTop_toBottomOf="@+id/textView_pcd_ke1" />
+
+    <TextView
+        android:id="@+id/textView_name1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:text="Название магазина"
+        android:textColor="@color/gold"
+        android:textSize="19sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView71"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:textSize="19sp"
+        android:layout_marginTop="10dp"
+        android:text="Название техники:"
+        android:textColor="@color/gold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_name1" />
+
+    <TextView
+        android:id="@+id/textView81"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:textSize="19sp"
+        android:layout_marginTop="10dp"
+        android:text="Монитор на укс ке"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView71" />
+
+    <TextView
+        android:id="@+id/textView91"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:textSize="19sp"
+        android:layout_marginTop="10dp"
+        android:text="Монитор на укс серийник"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView81" />
+
+    <TextView
+        android:id="@+id/textView101"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:textSize="19sp"
+        android:layout_marginTop="10dp"
+        android:text="Название техники:"
+        android:textColor="@color/gold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView91" />
+
+    <TextView
+        android:id="@+id/textView111"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:textSize="19sp"
+        android:layout_marginTop="10dp"
+        android:text="Сервер ке"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView101" />
+
+    <TextView
+        android:id="@+id/textView121"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:textSize="19sp"
+        android:layout_marginTop="10dp"
+        android:text="Сервер серийный номер"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView111" />
+
+    <TextView
+        android:id="@+id/textView131"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:textSize="19sp"
+        android:layout_marginTop="10dp"
+        android:text="Название техники:"
+        android:textColor="@color/gold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView121" />
+
+    <TextView
+        android:id="@+id/textView141"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:textSize="19sp"
+        android:layout_marginTop="10dp"
+        android:text="Роутер мастер ке"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView131" />
+
+    <TextView
+        android:id="@+id/textView151"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:textSize="19sp"
+        android:layout_marginTop="10dp"
+        android:text="Роутер мастер серийный номер"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView141" />
+
+    <TextView
+        android:id="@+id/textView161"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:textSize="19sp"
+        android:layout_marginTop="10dp"
+        android:text="Название техники:"
+        android:textColor="@color/gold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView151" />
+
+    <TextView
+        android:id="@+id/textView171"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:textSize="19sp"
+        android:layout_marginTop="10dp"
+        android:text="Роутер резерв ке"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView161" />
+
+    <TextView
+        android:id="@+id/textView181"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:textSize="19sp"
+        android:layout_marginTop="10dp"
+        android:text="Роутер резерв серийный номер"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView171" />
+
+    <TextView
+        android:id="@+id/textView191"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:textSize="19sp"
+        android:layout_marginTop="10dp"
+        android:text="Название техники:"
+        android:textColor="@color/gold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView181" />
+
+    <TextView
+        android:id="@+id/textView201"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:textSize="19sp"
+        android:layout_marginTop="10dp"
+        android:text="ИБП ПКД КЕ"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView191" />
+
+    <TextView
+        android:id="@+id/textView211"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:textSize="19sp"
+        android:layout_marginTop="10dp"
+        android:text="ИБП ПКД КЕ Серийный номер"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView201" />
+
+    <TextView
+        android:id="@+id/textView221"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:textSize="19sp"
+        android:layout_marginTop="10dp"
+        android:text="Название техники:"
+        android:textColor="@color/gold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView211" />
+
+    <TextView
+        android:id="@+id/textView231"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:textSize="19sp"
+        android:layout_marginTop="10dp"
+        android:text="ИБП Сервер ке"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView221" />
+
+    <TextView
+        android:id="@+id/textView241"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:textSize="19sp"
+        android:layout_marginTop="10dp"
+        android:text="ИБП Сервер серийный номер"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView231" />
+
+    <TextView
+        android:id="@+id/textView251"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:textSize="19sp"
+        android:layout_marginTop="10dp"
+        android:text="Название техники:"
+        android:textColor="@color/gold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView241" />
+
+    <TextView
+        android:id="@+id/textView261"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:textSize="19sp"
+        android:layout_marginTop="10dp"
+        android:text="Монитор ПКД КЕ"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView251" />
+
+    <TextView
+        android:id="@+id/textView271"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:textSize="19sp"
+        android:layout_marginTop="10dp"
+        android:text="Монитор ПКД серийний"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView261" />
+
+    <TextView
+        android:id="@+id/textView281"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:textSize="19sp"
+        android:layout_marginTop="10dp"
+        android:text="Название техники:"
+        android:textColor="@color/gold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView271" />
+
+    <TextView
+        android:id="@+id/textView291"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:textSize="19sp"
+        android:layout_marginTop="10dp"
+        android:text="Принтер КЕ"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView281" />
+
+    <TextView
+        android:id="@+id/textView301"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:textSize="19sp"
+        android:layout_marginTop="10dp"
+        android:text="Принтер серийный номер"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView291" />
+
+    <TextView
+        android:id="@+id/textView311"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:textSize="19sp"
+        android:layout_marginTop="10dp"
+        android:text="Название техники:"
+        android:textColor="@color/gold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView301" />
+
+    <TextView
+        android:id="@+id/textView321"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:textSize="19sp"
+        android:layout_marginTop="10dp"
+        android:text="ТСД 1 ке"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView311" />
+
+    <TextView
+        android:id="@+id/textView331"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:textSize="19sp"
+        android:layout_marginTop="10dp"
+        android:text="ТСД 1 Серийник"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView321" />
+
+    <TextView
+        android:id="@+id/textView341"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:textSize="19sp"
+        android:layout_marginTop="10dp"
+        android:text="Название техники:"
+        android:textColor="@color/gold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView331" />
+
+    <TextView
+        android:id="@+id/textView351"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:textSize="19sp"
+        android:layout_marginTop="10dp"
+        android:text="ТСД 2 КЕ"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView341" />
+
+    <TextView
+        android:id="@+id/textView361"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:textSize="19sp"
+        android:layout_marginTop="10dp"
+        android:text="ТСД 2 серийный номер"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView351" />
+
+    <TextView
+        android:id="@+id/textView371"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:textSize="19sp"
+        android:layout_marginTop="10dp"
+        android:text="Название техники:"
+        android:textColor="@color/gold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView361" />
+
+    <TextView
+        android:id="@+id/textView381"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:textSize="19sp"
+        android:layout_marginTop="10dp"
+        android:text="ТСД 3 КЕ"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView371" />
+
+    <TextView
+        android:id="@+id/textView391"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:textSize="19sp"
+        android:layout_marginTop="10dp"
+        android:text="ТСД 3 Серийник"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView381" />
+
+    <TextView
+        android:id="@+id/textViewName_pcd1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:textSize="19sp"
+        android:layout_marginTop="10dp"
+
+        android:textColor="@color/gold"
+        app:layout_constraintStart_toEndOf="@+id/textView71"
+        app:layout_constraintTop_toBottomOf="@+id/textView_name1" />
+
+    <TextView
+        android:id="@+id/textView_pcd_serial_number1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:textSize="19sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/textView81"
+        app:layout_constraintTop_toBottomOf="@+id/textViewName_pcd1" />
+
+    <TextView
+        android:id="@+id/textView_pcd_ke1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:textSize="19sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/textView91"
+        app:layout_constraintTop_toBottomOf="@+id/textView_pcd_serial_number1" />
+
+    <Button
+        android:id="@+id/button31"
+        android:layout_width="50dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:text="@string/replacement"
+        android:textSize="5sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_pcd_serial_number1"
+        tools:ignore="SmallSp" />
+
+    <TextView
+        android:id="@+id/textView_server_serial_number1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:textSize="19sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/textView111"
+        app:layout_constraintTop_toBottomOf="@+id/textView_name_server1" />
+
+    <TextView
+        android:id="@+id/textView_server_ke1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:textSize="19sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/textView121"
+        app:layout_constraintTop_toBottomOf="@+id/textView_server_serial_number1" />
+
+    <TextView
+        android:id="@+id/textView_router_master1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:textSize="19sp"
+        android:layout_marginTop="10dp"
+
+        android:textColor="@color/gold"
+        app:layout_constraintStart_toEndOf="@+id/textView131"
+        app:layout_constraintTop_toBottomOf="@+id/textView_server_ke1" />
+
+    <TextView
+        android:id="@+id/textView_router_master_serial_number1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:textSize="19sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/textView141"
+        app:layout_constraintTop_toBottomOf="@+id/textView_router_master1" />
+
+    <TextView
+        android:id="@+id/textView_router_master_ke1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:textSize="19sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/textView151"
+        app:layout_constraintTop_toBottomOf="@+id/textView_router_master_serial_number1" />
+
+    <TextView
+        android:id="@+id/textView_router_reserve1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:textSize="19sp"
+        android:layout_marginTop="10dp"
+
+        android:textColor="@color/gold"
+        app:layout_constraintStart_toEndOf="@+id/textView161"
+        app:layout_constraintTop_toBottomOf="@+id/textView_router_master_ke1" />
+
+    <TextView
+        android:id="@+id/textView_router_reserve_serial_number1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:textSize="19sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/textView171"
+        app:layout_constraintTop_toBottomOf="@+id/textView_router_reserve1" />
+
+    <TextView
+        android:id="@+id/textView_router_reserve_ke1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:textSize="19sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/textView181"
+        app:layout_constraintTop_toBottomOf="@+id/textView_router_reserve_serial_number1" />
+
+    <TextView
+        android:id="@+id/textView_ups_pcd_serial_number1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:textSize="19sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/textView201"
+        app:layout_constraintTop_toBottomOf="@+id/textView_ups_pcd1" />
+
+    <TextView
+        android:id="@+id/textView_ups_pcd_ke1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:textSize="19sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/textView211"
+        app:layout_constraintTop_toBottomOf="@+id/textView_ups_pcd_serial_number1" />
+
+    <TextView
+        android:id="@+id/textView_monitor_pcd1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:textSize="19sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/gold"
+        app:layout_constraintStart_toEndOf="@+id/textView251"
+        app:layout_constraintTop_toBottomOf="@+id/textView_ups_server_ke1" />
+
+    <TextView
+        android:id="@+id/textView_ups_server_ke1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:textSize="19sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/textView241"
+        app:layout_constraintTop_toBottomOf="@+id/textView_ups_server_serial_number1" />
+
+    <TextView
+        android:id="@+id/textView_ups_server1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:textSize="19sp"
+        android:layout_marginTop="10dp"
+
+        android:textColor="@color/gold"
+        app:layout_constraintStart_toEndOf="@+id/textView221"
+        app:layout_constraintTop_toBottomOf="@+id/textView_ups_pcd_ke1" />
+
+    <TextView
+        android:id="@+id/textView_monitor_pcd_serial_number1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:textSize="19sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/textView261"
+        app:layout_constraintTop_toBottomOf="@+id/textView_monitor_pcd1" />
+
+    <TextView
+        android:id="@+id/textView_print_pcd_serial_number1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:textSize="19sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/textView291"
+        app:layout_constraintTop_toBottomOf="@+id/textView_print_pcd1" />
+
+    <TextView
+        android:id="@+id/textView_print_pcd_ke1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:textSize="19sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/textView301"
+        app:layout_constraintTop_toBottomOf="@+id/textView_print_pcd_serial_number1" />
+
+    <TextView
+        android:id="@+id/textView_tsd1_serial_number1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:textSize="19sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/textView321"
+        app:layout_constraintTop_toBottomOf="@+id/textView_tsd11" />
+
+    <TextView
+        android:id="@+id/textView_tsd21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:textSize="19sp"
+        android:layout_marginTop="10dp"
+
+        android:textColor="@color/gold"
+        app:layout_constraintStart_toEndOf="@+id/textView341"
+        app:layout_constraintTop_toBottomOf="@+id/textView_tsd1_pcd_ke1" />
+
+    <TextView
+        android:id="@+id/textView_tsd2_serial_number1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:textSize="19sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/textView351"
+        app:layout_constraintTop_toBottomOf="@+id/textView_tsd21" />
+
+    <TextView
+        android:id="@+id/textView_tsd2_pcd_ke1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:textSize="19sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/textView361"
+        app:layout_constraintTop_toBottomOf="@+id/textView_tsd2_serial_number1" />
+
+    <TextView
+        android:id="@+id/textView_tsd3_serial_number1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:textSize="19sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/textView381"
+        app:layout_constraintTop_toBottomOf="@+id/textView_tsd31" />
+
+    <TextView
+        android:id="@+id/textView_tsd3_pcd_ke1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:textSize="19sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/textView391"
+        app:layout_constraintTop_toBottomOf="@+id/textView_tsd3_serial_number1" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="50dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:text="@string/replacement"
+        android:textSize="5sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewName_pcd1"
+        tools:ignore="SmallSp" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="50dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:text="@string/replacement"
+        android:textSize="5sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_name_server1"
+        tools:ignore="SmallSp" />
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="50dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:text="@string/replacement"
+        android:textSize="5sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_server_serial_number1"
+        tools:ignore="SmallSp" />
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="50dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:text="@string/replacement"
+        android:textSize="5sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_router_master1"
+        tools:ignore="SmallSp" />
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="50dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:text="@string/replacement"
+        android:textSize="5sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_router_master_serial_number1"
+        tools:ignore="SmallSp" />
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="50dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:text="@string/replacement"
+        android:textSize="5sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_router_reserve1"
+        tools:ignore="SmallSp" />
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="50dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:text="@string/replacement"
+        android:textSize="5sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_router_reserve_serial_number1"
+        tools:ignore="SmallSp" />
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="50dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:text="@string/replacement"
+        android:textSize="5sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_ups_pcd1"
+        tools:ignore="SmallSp" />
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="50dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:text="@string/replacement"
+        android:textSize="5sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_ups_pcd_serial_number1"
+        tools:ignore="SmallSp" />
+
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="50dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:text="@string/replacement"
+        android:textSize="5sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_ups_server1"
+        tools:ignore="SmallSp,TooManyViews" />
+    <Button
+        android:id="@+id/button13"
+        android:layout_width="50dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:text="@string/replacement"
+        android:textSize="5sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_ups_server_serial_number1"
+        tools:ignore="SmallSp" />
+
+    <Button
+        android:id="@+id/button14"
+        android:layout_width="50dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:text="@string/replacement"
+        android:textSize="5sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_monitor_pcd1"
+        tools:ignore="SmallSp" />
+    <Button
+        android:id="@+id/button15"
+        android:layout_width="50dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:text="@string/replacement"
+        android:textSize="5sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_monitor_pcd_serial_number1"
+        tools:ignore="SmallSp" />
+    <Button
+        android:id="@+id/button16"
+        android:layout_width="50dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:text="@string/replacement"
+        android:textSize="5sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_print_pcd1"
+        tools:ignore="SmallSp" />
+    <Button
+        android:id="@+id/button17"
+        android:layout_width="50dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:text="@string/replacement"
+        android:textSize="5sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_print_pcd_serial_number1"
+        tools:ignore="SmallSp" />
+    <Button
+        android:id="@+id/button18"
+        android:layout_width="50dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:text="@string/replacement"
+        android:textSize="5sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_tsd11"
+        tools:ignore="SmallSp" />
+    <Button
+        android:id="@+id/button19"
+        android:layout_width="50dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:text="@string/replacement"
+        android:textSize="5sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_tsd1_serial_number1"
+        tools:ignore="SmallSp" />
+    <Button
+        android:id="@+id/button20"
+        android:layout_width="50dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:text="@string/replacement"
+        android:textSize="5sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_tsd21"
+        tools:ignore="SmallSp" />
+    <Button
+        android:id="@+id/button21"
+        android:layout_width="50dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:text="@string/replacement"
+        android:textSize="5sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_tsd2_serial_number1"
+        tools:ignore="SmallSp" />
+    <Button
+        android:id="@+id/button22"
+        android:layout_width="50dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:text="@string/replacement"
+        android:textSize="5sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_tsd31"
+        tools:ignore="SmallSp" />
+    <Button
+        android:id="@+id/button23"
+        android:layout_width="50dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:text="@string/replacement"
+        android:textSize="5sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_tsd3_serial_number1"
+        tools:ignore="SmallSp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

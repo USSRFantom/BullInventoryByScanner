@@ -2,6 +2,7 @@
     <string name="app_name">Bull Inventory By Scanner</string>
     <string name="img_background">Img_background</string>
     <string name="Search">Поиск</string>
+    <string name="replacement">замена</string>
     <array name="shops">
         <item>"Веланский"</item>
         <item>"Барракуда"</item>
