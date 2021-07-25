@@ -1,4 +1,4 @@
-package ussrfantom.com.example.bullinventorybyscanner.searchke.employess;
+package ussrfantom.com.example.bullinventorybyscanner.replacementke;
 
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.disposables.CompositeDisposable;
@@ -9,16 +9,15 @@ import ussrfantom.com.example.bullinventorybyscanner.api.ApiFactory;
 import ussrfantom.com.example.bullinventorybyscanner.api.ApiService;
 import ussrfantom.com.example.bullinventorybyscanner.pojo.EmployeeShop;
 
-public class EmployeeListPresenter {
+public class EmployeeListReplacementPresenter {
     private CompositeDisposable compositeDisposable;
-    private EmployeesListView view;
+    private EmployeeReplacement view;
 
-
-
-
-    public EmployeeListPresenter(EmployeesListView view) {
+    public EmployeeListReplacementPresenter(EmployeeReplacement view) {
         this.view = view;
     }
+
+
 
     //загрузка данных ьиз интернета начало
     public void loadData(){
@@ -32,13 +31,11 @@ public class EmployeeListPresenter {
                     @Override
                     public void accept(EmployeeShop employeeShop) throws Exception {
                         view.showData(employeeShop.getShop());
-
                     }
                 }, new Consumer<Throwable>() {
                     @Override
                     public void accept(Throwable throwable) throws Exception {
                         view.showError();
-
                     }
                 });
         compositeDisposable.add(disposable);
@@ -53,4 +50,3 @@ public class EmployeeListPresenter {
     }
     //останока потоков конец
 }
-

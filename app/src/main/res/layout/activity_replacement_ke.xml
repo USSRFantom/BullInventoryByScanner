@@ -18,7 +18,7 @@
         app:srcCompat="@drawable/fon"
         android:contentDescription="@string/img_background" />
     <Spinner
-        android:id="@+id/spinnerShops"
+        android:id="@+id/spinnerShops1"
         android:layout_width="0dp"
         android:layout_height="40dp"
         android:layout_marginStart="5dp"
@@ -31,7 +31,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
     <Button
-        android:id="@+id/buttonSearch"
+        android:id="@+id/buttonSearch1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
@@ -42,7 +42,7 @@
         android:background="@drawable/bg_start_btn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinnerShops" />
+        app:layout_constraintTop_toBottomOf="@+id/spinnerShops1" />
 
 
     <androidx.recyclerview.widget.RecyclerView
@@ -55,6 +55,6 @@
         app:layout_constraintBottom_toBottomOf="@+id/imageView5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonSearch" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonSearch1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

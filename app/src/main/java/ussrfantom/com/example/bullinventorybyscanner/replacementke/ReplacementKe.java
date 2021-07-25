@@ -1,8 +1,14 @@
 package ussrfantom.com.example.bullinventorybyscanner.replacementke;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.Spinner;
+import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.ItemTouchHelper;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -13,58 +19,88 @@ import ussrfantom.com.example.bullinventorybyscanner.R;
 import ussrfantom.com.example.bullinventorybyscanner.adapters.EmployeeReplacementAdapter;
 import ussrfantom.com.example.bullinventorybyscanner.pojo.Shop;
 
-public class ReplacementKe extends AppCompatActivity {
+public class ReplacementKe extends AppCompatActivity implements EmployeeReplacement {
 
     private RecyclerView recyclerViewReplacementEmployees;
     private EmployeeReplacementAdapter adapter;
+    private Button buttonSearch1;
+    private Spinner spinnerSearch1;
+    private List<Shop> arrayListShop1;
+    private List<Shop> arrayListShops1;
+    private EmployeeListReplacementPresenter presenter;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_replacement_ke);
+        presenter = new EmployeeListReplacementPresenter(this);
+        spinnerSearch1 = findViewById(R.id.spinnerShops1);
+        buttonSearch1 = findViewById(R.id.buttonSearch1);
         recyclerViewReplacementEmployees = findViewById(R.id.recyclerViewShopReplacement);
         adapter = new EmployeeReplacementAdapter();
+        adapter.setShops(new ArrayList<>());
         recyclerViewReplacementEmployees.setLayoutManager(new LinearLayoutManager(this));
         recyclerViewReplacementEmployees.setAdapter(adapter);
-        List<Shop> shops = new ArrayList<>();
-        Shop shop1 = new Shop();
-        shop1.setName("12312312312");
-        shop1.setNamePcd("12312312312");
-        shop1.setPcdSerialNumber("12312312312");
-        shop1.setPcdKe("12312312312");
-        shop1.setNameServer("12312312312");
-        shop1.setServerSerialNumber("12312312312");
-        shop1.setServerKe("12312312312");
-        shop1.setRouterMaster("12312312312");
-        shop1.setRouterMasterSerialNumber("12312312312");
-        shop1.setRouterMasterKe("12312312312");
-        shop1.setRouterReserve("12312312312");
-        shop1.setRouterReserveSerialNumber("12312312312");
-        shop1.setRouterReserveKe("12312312312");
-        shop1.setUpsPcd("12312312312");
-        shop1.setUpsPcdSerialNumber("12312312312");
-        shop1.setUpsPcdKe("12312312312");
-        shop1.setUpsServer("12312312312");
-        shop1.setUpsServerSerialNumber("12312312312");
-        shop1.setUpsServerKe("12312312312");
-        shop1.setMonitorPcd("12312312312");
-        shop1.setMonitorPcdSerialNumber("12312312312");
-        shop1.setMonitorPcdKe("12312312312");
-        shop1.setPrintPcd("12312312312");
-        shop1.setPrintPcdSerialNumber("12312312312");
-        shop1.setPrintPcdKe("12312312312");
-        shop1.setTsd1("12312312312");
-        shop1.setTsd1SerialNumber("12312312312");
-        shop1.setTsd1PcdKe("12312312312");
-        shop1.setTsd2("12312312312");
-        shop1.setTsd2SerialNumber("12312312312");
-        shop1.setTsd2PcdKe("12312312312");
-        shop1.setTsd3("12312312312");
-        shop1.setTsd3SerialNumber("12312312312");
-        shop1.setTsd3PcdKe("12312312312");
-        shops.add(shop1);
-        adapter.setShops(shops);
+        presenter.loadData();
+        arrayListShop1 = new ArrayList<>();
 
 
+        //получаем магазин при нажатии кнопки начало
+        buttonSearch1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                int position = spinnerSearch1.getSelectedItemPosition(); // получаем позицию элемента
+                arrayListShop1.add(arrayListShops1.get(position));
+                adapter.setShops(arrayListShop1);
+            }
+        });
+
+        //конец
+
+        //Удаление свайпом начало
+        ItemTouchHelper itemTouchHelper = new ItemTouchHelper(new ItemTouchHelper.SimpleCallback(0, ItemTouchHelper.LEFT | ItemTouchHelper.RIGHT) {
+            @Override
+            public boolean onMove(@NonNull RecyclerView recyclerView, @NonNull RecyclerView.ViewHolder viewHolder, @NonNull RecyclerView.ViewHolder target) {
+                return false;
+            }
+
+            @Override
+            public void onSwiped(@NonNull RecyclerView.ViewHolder viewHolder, int direction) {
+                remove(viewHolder.getAdapterPosition());
+            }
+        });
+        itemTouchHelper.attachToRecyclerView(recyclerViewReplacementEmployees);
+        //Удаление свайпом конец
     }
+
+    //установка данных начало
+    public void showData(List<Shop> employeeShop1){
+        arrayListShops1 = employeeShop1;
+        adapter.setShops(arrayListShop1);
+    }
+    //установка данных конец
+
+    //удаление элемента из смписка начало
+    private void remove (int position){
+        arrayListShop1.remove(position);
+        adapter.notifyDataSetChanged();
+    }
+    //удаление элемента из смписка конец
+
+    //отсутсвие интернета начало
+    public void showError(){
+        Toast.makeText(this, "Ошибка подключения к интернету! Вылези из бочки", Toast.LENGTH_SHORT).show();
+    }
+    //отсутсвие интернета конец
+
+    //закрытие приложение и остановка загрузки данных начало
+    @Override
+    protected void onDestroy() {
+        presenter.disposeDisposable();
+        super.onDestroy();
+    }
+    //закрытие приложение и остановка загрузки данных конец
+
+
 }
