@@ -3,6 +3,7 @@ package ussrfantom.com.example.bullinventorybyscanner.adapters;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -16,6 +17,15 @@ import ussrfantom.com.example.bullinventorybyscanner.pojo.Shop;
 
 public class EmployeeReplacementAdapter extends RecyclerView.Adapter<EmployeeReplacementAdapter.EmployeeReplacementViewHolder>{
 
+    private OnButtonClick onButtonClick;
+
+    public interface OnButtonClick{
+        void OnButtonClickShop(int position);
+    }
+
+    public void setOnButtonClick(OnButtonClick onButtonClick) {
+        this.onButtonClick = onButtonClick;
+    }
 
     private List<Shop> shops;
 
@@ -117,6 +127,8 @@ public class EmployeeReplacementAdapter extends RecyclerView.Adapter<EmployeeRep
         TextView textView_tsd31;
         TextView textView_tsd3_serial_number1;
         TextView textView_tsd3_pcd_ke1;
+        Button button2;
+        Button button3;
 
 
 
@@ -157,6 +169,19 @@ public class EmployeeReplacementAdapter extends RecyclerView.Adapter<EmployeeRep
             textView_tsd31 = itemView.findViewById(R.id.textView_tsd31);
             textView_tsd3_serial_number1 = itemView.findViewById(R.id.textView_tsd3_serial_number1);
             textView_tsd3_pcd_ke1 = itemView.findViewById(R.id.textView_tsd3_pcd_ke1);
+            button2 = itemView.findViewById(R.id.button2);
+            button3 = itemView.findViewById(R.id.button31);
+
+            button2.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    onButtonClick.OnButtonClickShop(1);
+                }
+            });
+
+
+
+
         }
     }
 
