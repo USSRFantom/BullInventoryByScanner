@@ -1,7 +1,6 @@
 package ussrfantom.com.example.bullinventorybyscanner.replacementke;
 
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Spinner;
@@ -53,15 +52,27 @@ public class ReplacementKe extends AppCompatActivity implements EmployeeReplacem
             public void OnButtonClickShop(int position) {
                 switch (position){
                     case (1):
-                        Shop shop = arrayListShop1.get(0);
+                        shop = arrayListShop1.get(0);
                         shop.setPcdKe("ВОТ так вот");
-                        arrayListShop1.remove(0);
                         arrayListShop1.add(shop);
+                        remove(0);
+                        showData(arrayListShop1);
                         adapter.notifyDataSetChanged();
+                    case (2):
+                        shop = arrayListShop1.get(0);
+                        shop.setPcdSerialNumber("ВОТ так вот");
+                        arrayListShop1.add(shop);
+                        remove(0);
+                        showData(arrayListShop1);
+                        adapter.notifyDataSetChanged();
+                    default:
+                        Toast.makeText(ReplacementKe.this, "Ошибка", Toast.LENGTH_SHORT).show();
+
+                        break;
                 }
             }
         });
-
+        //проверка на нажите одной из кнопок конец
 
         //получаем магазин при нажатии кнопки начало
         buttonSearch1.setOnClickListener(new View.OnClickListener() {

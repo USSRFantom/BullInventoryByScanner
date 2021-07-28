@@ -179,6 +179,12 @@ public class EmployeeReplacementAdapter extends RecyclerView.Adapter<EmployeeRep
                 }
             });
 
+            button3.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    onButtonClick.OnButtonClickShop(1);
+                }
+            });
 
 
 
