@@ -1,5 +1,7 @@
 package ussrfantom.com.example.bullinventorybyscanner.replacementke;
 
+import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -11,6 +13,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.ItemTouchHelper;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.google.zxing.integration.android.IntentIntegrator;
+import com.google.zxing.integration.android.IntentResult;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -29,6 +34,10 @@ public class ReplacementKe extends AppCompatActivity implements EmployeeReplacem
     private List<Shop> arrayListShops1;
     private EmployeeListReplacementPresenter presenter;
     private Shop shop;
+    final Activity activity = this;
+    private String searchResultCode;
+    private int myPosition;
+
 
 
     @Override
@@ -46,25 +55,21 @@ public class ReplacementKe extends AppCompatActivity implements EmployeeReplacem
         presenter.loadData();
         arrayListShop1 = new ArrayList<>();
 
+
+
+
+
         //проверка на нажите одной из кнопок начало
         adapter.setOnButtonClick(new EmployeeReplacementAdapter.OnButtonClick() {
             @Override
             public void OnButtonClickShop(int position) {
+                scan();
                 switch (position){
                     case (1):
-                        shop = arrayListShop1.get(0);
-                        shop.setPcdKe("ВОТ так вот");
-                        arrayListShop1.add(shop);
-                        remove(0);
-                        showData(arrayListShop1);
-                        adapter.notifyDataSetChanged();
+                        myPosition = 1;
+
                     case (2):
-                        shop = arrayListShop1.get(0);
-                        shop.setPcdSerialNumber("ВОТ так вот");
-                        arrayListShop1.add(shop);
-                        remove(0);
-                        showData(arrayListShop1);
-                        adapter.notifyDataSetChanged();
+                        myPosition = 2;
                     default:
                         Toast.makeText(ReplacementKe.this, "Ошибка", Toast.LENGTH_SHORT).show();
 
@@ -72,6 +77,11 @@ public class ReplacementKe extends AppCompatActivity implements EmployeeReplacem
                 }
             }
         });
+
+
+
+
+
         //проверка на нажите одной из кнопок конец
 
         //получаем магазин при нажатии кнопки начало
@@ -102,6 +112,8 @@ public class ReplacementKe extends AppCompatActivity implements EmployeeReplacem
         //Удаление свайпом конец
     }
 
+
+
     //установка данных начало
     public void showData(List<Shop> employeeShop1){
         arrayListShops1 = employeeShop1;
@@ -115,6 +127,62 @@ public class ReplacementKe extends AppCompatActivity implements EmployeeReplacem
         adapter.notifyDataSetChanged();
     }
     //удаление элемента из смписка конец
+
+    //сканирование кода начало
+    private  void scan(){
+        IntentIntegrator integrator = new IntentIntegrator(activity);
+        integrator.setDesiredBarcodeFormats(IntentIntegrator.ALL_CODE_TYPES);
+        integrator.setPrompt("Scan");
+        integrator.setCameraId(0);
+        integrator.setBeepEnabled(false);
+        integrator.setBarcodeImageEnabled(false);
+        integrator.initiateScan();
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode,  Intent data) {
+        IntentResult result = IntentIntegrator.parseActivityResult(requestCode, resultCode, data);
+        if (result != null) {
+            if (result.getContents() == null) {
+                Toast.makeText(this, "Алярма", Toast.LENGTH_SHORT).show();
+            } else {
+                Toast.makeText(this, result.getContents(), Toast.LENGTH_LONG).show();
+                searchResultCode = result.getContents();
+                showDataScanner(myPosition, searchResultCode);
+
+            }
+        } else {
+            super.onActivityResult(requestCode, resultCode, data);
+        }
+    }
+
+
+    public void showDataScanner(int position, String result){
+        switch (position){
+            case (1):
+                shop = arrayListShop1.get(0);
+                shop.setPcdSerialNumber(result);
+                arrayListShop1.add(shop);
+                remove(0);
+                showData(arrayListShop1);
+                adapter.notifyDataSetChanged();
+
+            case (2):
+                shop = arrayListShop1.get(0);
+                shop.setPcdSerialNumber(result);
+                arrayListShop1.add(shop);
+                remove(0);
+                showData(arrayListShop1);
+                adapter.notifyDataSetChanged();
+            default:
+                Toast.makeText(ReplacementKe.this, "Ошибка", Toast.LENGTH_SHORT).show();
+
+                break;
+        }
+    }
+
+    //сканирование кода конец
+
 
     //отсутсвие интернета начало
     public void showError(){
